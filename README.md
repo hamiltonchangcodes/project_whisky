@@ -6,9 +6,9 @@ Welcome to Project Whisky.  In this project, we will be attempting to classify w
 
 Data is sourced from Whiskeyanalysis.com.  Data consisted of 1600 individual whiskies, and ranged from the following:
 
-Target: 
+Target:   
 Countries - Scotland, USA, Canada, Ireland, Japan, Sweden, India, Taiwan, Wales, Switzerland, Finland, Tasmania, South Africa, Netherlands, England, Belgium, France.
-Features:
+Features:  
 Class - Single-Malt like, Blend, Rye-like, Bourbon-like
 Type - Malt, Blend, Grain, Rye, Wheat, Barley, Bourbon, Flavored
 
