@@ -11,7 +11,7 @@ Countries - Scotland, USA, Canada, Ireland, Japan, Sweden, India, Taiwan, Wales,
 Features (kept):  
 Cluster: A, B, C, D, E, F, G, H, I, J, R0, R1, R2, R4.  
 Class - Single-Malt like, Blend, Rye-like, Bourbon-like.   
-Type - Malt, Blend, Grain, Rye, Wheat, Barley, Bourbon, Flavored
+Type - Malt, Blend, Grain, Rye, Wheat, Barley, Bourbon, Flavored  
 Features (discarded):
 Super Cluster: amalgamation of flavors that whiskey posseses (discarded in favor of single flavor due to low diversity)
 Whiskey: name of individual whiskey
