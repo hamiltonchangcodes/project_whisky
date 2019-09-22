@@ -46,7 +46,7 @@ The following Models were then tested with various parameters producing the foll
 KNN:  
 Precision:  43.5%  
 Recall:  42.2%  
-
+<img src ="Images/knn_confusion.png">
 Decision Trees:  
 Precision:  35%  
 Recall:  33%  
@@ -54,19 +54,19 @@ Recall:  33%
 Regression Trees:  
 Precision:  19%  
 Recall:  33%  
-
+<img src="Images/RGdt_confusion.png">
 Bagged Trees:  
 Precision:  21%  
 Recall:  34%  
-
+<img src='Images/baggeddt_confusion.png">
 Random Forest:  
 Precision:  19%  
 Recall:  32% 
-
+<img src="Images/rf_confusion.png">
 AdaBoost:
 Precision:  36%  
 Recall:  30%  
-
+<img src="Images/adaboost_confusion.png">
 Gradient Boost:
 Precision:  37%  
 Recall:  36%  
@@ -74,7 +74,8 @@ Recall:  36%
 XGBoost:  
 Precision:  44%  
 Recall:  40%  
-
+<img src="Images/XGB_confusion_matrix.png">
 Support Vector Machines:  
 Precision:  40%  
 Recall:  44%  
+<img src="Images/svm_confusionmatrix.png">
