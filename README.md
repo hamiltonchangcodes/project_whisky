@@ -65,7 +65,7 @@ Recall:  34%
           
 Random Forest:  
 Precision:  19%  
-Recall:  32% 
+Recall:  32%   
 <img src="Graphs/rf_confusion.png">
 
 AdaBoost:  
@@ -87,5 +87,15 @@ Support Vector Machines:
 Precision:  40%  
 Recall:  44%  
 <img src="Graphs/svm_confusionmatrix.png">
+
+## Conclusions
+
+In the end, despite KNN's high score, its distribution of True Positives and False Negatives was not desireable.  In the goal of being able to randomly sort, I wanted to see more homoscedasty.  Given how overweight the data is in Scotch, I wanted this data to exhibit more Type I errors, rather than just allocating everything to scotch as is evident in the KNN confusion matrix.  This might have improved my accuracy, but ends up being a poor classification model.  SVM delivered the homoscedastity I was looking for while still having high enough Precision and Recall scores, so SVM was designated as the best performing model.
+
+Its worth noting that the difficulty in modeling this classification exercise may be due in large part to market forces.  Scotch is widely recognized as the gold standard for whiskeys globally.  Those looking to set up competing distilleries in their home country and looking to make a name for themselves typically follow the Scottish model for establishing their equipment.  Then, in order to create a viable product, further seek to emulate the distinctive Scotch flavor profile in order to maximize success and drinker appeal.  One could look at the Japanese model for such an example.  Masataka Taketsuru, widely known as the father or Japanese Whiskey worked in Scottish distilleries for years before returning home to Japan to start his own distillery.  Anecdotes from the time say that Taketsuru copied the Scottish model down to its very last detail, including making sure the very first still created in Japan replicated those he had seen, down to the dimensions of the centuries old dents he observed on the stills in Scotland.  
+
+Once a viable product an income stream has been established, these other distilleries may allow themselves to experiment with their production process and seek to create new and interesting flavors that may have more appeal to their domestic markets.  In the America for example, American whiskey production has changed both by locally available ingredients and enough time and distance from the motherland to create their own distinctive take on whiskey, bourbon.  With an enormous and loyal domestic customer base, there is little need for American to emulate the Scottish model and they are content with producing a product with their distinctive flavor profile.  Time will tell if distilleries in other countries will eventually settle on their own brand of flavor.
+
+Further difficulties were revealed in conversations with industry experts.  I spoke with Olivier Bugat of Casamigos Tequila regarding the models created and he pointed out that the flavor profiles used to categorize whiskeys was insufficient in properly taking into account its national origin.  Variations such as equipment shape, local air quality, elevation, and temperature all effect the ultimate flavor of whiskey.  Each of these variations results in the inclusion or exclusion of hundreds of chemical components that will ultimately affect the final product.  Liquid and Gas Chromatography is used these days to analyze the "finger print" of whiskey to identify its origin and it is my hope to one day be able to access this data and further refine my models.
 
 
