@@ -50,7 +50,7 @@ Recall:  42.2%
 Decision Trees:  
 Precision:  35%  
 Recall:  33%  
-
+<img src="Images/Dtree_confusion.png">
 Regression Trees:  
 Precision:  19%  
 Recall:  33%  
