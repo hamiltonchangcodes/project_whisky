@@ -48,33 +48,33 @@ Precision:  43.5%
 Recall:  42.2%  
 
 Decision Trees:  
-Precision:  
-Recall:  
+Precision:  35%  
+Recall:  33%  
 
 Regression Trees:  
-Precision:  
-Recall:  
+Precision:  19%  
+Recall:  33%  
 
 Bagged Trees:  
-Precision:  
-Recall:  
+Precision:  21%  
+Recall:  34%  
 
 Random Forest:  
 Precision:  19%  
 Recall:  32% 
 
 AdaBoost:
-Precision:  
-Recall:  
+Precision:  36%  
+Recall:  30%  
 
 Gradient Boost:
-Precision:  
-Recall:  
+Precision:  37%  
+Recall:  36%  
 
 XGBoost:  
-Precision:  
-Recall:  
+Precision:  44%  
+Recall:  40%  
 
 Support Vector Machines:  
-Precision:  
-Recall:  
+Precision:  40%  
+Recall:  44%  
