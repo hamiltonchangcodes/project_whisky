@@ -68,12 +68,12 @@ Precision:  19%
 Recall:  32% 
 <img src="Images/rf_confusion.png">
 
-AdaBoost:
+AdaBoost:  
 Precision:  36%  
 Recall:  30%  
 <img src="Images/adaboost_confusion.png">
 
-Gradient Boost:
+Gradient Boost:  
 Precision:  37%  
 Recall:  36%  
 <img src="Images/gbt_confusion.png">
