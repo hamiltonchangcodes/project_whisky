@@ -28,17 +28,17 @@ Prior to reorganizing, countries were broken up into the following:
 <img src="Graphs/country_graph.png">
 In addition, the original dataset creator chose to rank Bourbons based on their Rye content, as bourbon tends to follow a set flavor characteristic, and is particularly distinguishable by its rye content, which gives rye whiskies its distinctive "spiciness."  In order to better train the model and avoid automatically identifying "R's" as bourbon, I needed to translate the "R's" into a more streamlined format based on the general flavor profile of bourbons based on the pre-existing flavor categories, taking spiciness into account.  Thus the final transformation was lined up thusly:
 
-RO = B
-R1 = A
-R2 = E
-R3 = C
-R4 = F
+RO = B  
+R1 = A  
+R2 = E  
+R3 = C  
+R4 = F  
 
 Lastly, dummies were created for all remaining categorical values.
 
 ## Modeling
 
-Data was prepped with standard train_test_split libarary, then SMOTEd to compensate for the overweighted Scotch.
+Data was prepped with standard train_test_split libarary, then SMOTE'd to compensate for the overweighted Scotch.
 
 Standard DummyClassifier using Uniform method to test predicting uniformly at random or "man on the street" testing produced a result of 17% for Precision and Recall score, establishing out baseline.
 
