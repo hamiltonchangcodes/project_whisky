@@ -85,8 +85,8 @@ Recall:  40%
 <img src="Graphs/XGB_confusion_matrix.png">
 
 **Support Vector Machines: WINNER**  
-Precision:  40%  
-Recall:  44%  
+**Precision:  40%  
+Recall:  44%**  
 <img src="Graphs/svm_confusionmatrix.png">
 
 ## Conclusions
