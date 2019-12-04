@@ -26,19 +26,19 @@ Cost: approximate cost of whiskey in $
 Initial problems I encountered with the data were in properly classifying my data.  I first needed to convert countries into number values, which was a simple replace.  Due to the massive imbalance between Scotch whiskies and the whiskies produced from the rest of the world, I also grouped the 11 least populous whiskies and grouped them as "rest_of_world," keeping Scotland, USA, Canada, Ireland, and Japan.
 Prior to reorganizing, countries were broken up into the following:  
 <img src="Graphs/country_graph.png">
-In addition, the original dataset creator chose to rank Bourbons based on their Rye content, as bourbon tends to follow a set flavor characteristic, and is particularly distinguishable by its rye content, which gives rye whiskies its distinctive "spiciness."  In order to better train the model and avoid automatically identifying "R's" as bourbon, I needed to translate the "R's" into a more streamlined format based on the general flavor profile of bourbons based on the pre-existing flavor categories, taking spiciness into account.  Thus the final transformation was lined up thusly:
+In addition, the original dataset creator chose to rank Bourbons based on their Rye content, as bourbon tends to follow a set flavor characteristic, but is particularly distinguishable by its rye content, which gives rye whiskies their distinctive "spiciness."  In order to better train the model and avoid automatically identifying "R's" as bourbon, I needed to translate the "R's" into a more streamlined format based on the general flavor profile of bourbons based on the pre-existing flavor categories, taking spiciness into account.  Thus the final transformation was lined up thusly:
 
-RO = B
-R1 = A
-R2 = E
-R3 = C
-R4 = F
+RO = B  
+R1 = A  
+R2 = E  
+R3 = C  
+R4 = F  
 
 Lastly, dummies were created for all remaining categorical values.
 
 ## Modeling
 
-Data was prepped with standard train_test_split libarary, then SMOTEd to compensate for the overweighted Scotch.
+Data was prepped with standard train_test_split libarary, then SMOTE'd to compensate for the overweighted Scotch.
 
 Standard DummyClassifier using Uniform method to test predicting uniformly at random or "man on the street" testing produced a result of 17% for Precision and Recall score, establishing out baseline.
 
@@ -84,9 +84,9 @@ Precision:  44%
 Recall:  40%  
 <img src="Graphs/XGB_confusion_matrix.png">
 
-Support Vector Machines:  
-Precision:  40%  
-Recall:  44%  
+**Support Vector Machines: WINNER**  
+**Precision:  40%  
+Recall:  44%**  
 <img src="Graphs/svm_confusionmatrix.png">
 
 ## Conclusions
@@ -95,7 +95,7 @@ In the end, despite KNN's high score, its distribution of True Positives and Fal
 
 Its worth noting that the difficulty in modeling this classification exercise may be due in large part to market forces.  Scotch is widely recognized as the gold standard for whiskeys globally.  Those looking to set up competing distilleries in their home country and looking to make a name for themselves typically follow the Scottish model for establishing their equipment.  Then, in order to create a viable product, further seek to emulate the distinctive Scotch flavor profile in order to maximize success and drinker appeal.  This results in many whiskies that emulate Scotch, and its entirely possible for a Scotch to taste like another countries whiskey given enough data.  One could look at the Japanese model for such an example.  Masataka Taketsuru, widely known as the father or Japanese Whiskey, worked in Scottish distilleries for years before returning home to Japan to start his own distillery.  Anecdotes from the time say that Taketsuru copied the Scottish model down to its very last detail, including the dimensions of the centuries old dents he observed on the stills in Scotland.  
 
-Once a viable product an income stream has been established, these other distilleries may allow themselves to experiment with their production process and seek to create new and interesting flavors that may have more appeal to their domestic markets.  In the USA for example, American whiskey production has changed both by locally available ingredients and enough time and distance from the old world to create their own distinctive take on whiskey, bourbon.  With an enormous and loyal domestic customer base, there is little need for American to emulate the Scottish model and they are content with producing a product with their own national distinctive flavor profile.  Time will tell if distilleries in other countries will eventually settle on their own brand of flavor.
+Once a viable product and income stream has been established, these other distilleries may allow themselves to experiment with their production process and seek to create new and interesting flavors that may have more appeal to their domestic markets.  In the USA for example, American whiskey production has changed both by locally available ingredients and enough time and distance from the old world to create their own distinctive take on whiskey, bourbon.  With an enormous and loyal domestic customer base, there is little need for American to emulate the Scottish model and they are content with producing a product with their own national distinctive flavor profile.  Time will tell if distilleries in other countries will eventually settle on their own brand of flavor.
 
 Further difficulties were revealed in conversations with industry experts.  I spoke with Olivier Bugat of Casamigos Tequila regarding the models I created and he pointed out that the flavor profiles used to categorize whiskeys was insufficient in properly taking into account its national origin.  Variations such as equipment dimensions, distilling procedures, local air quality, elevation, and temperature all affect the ultimate flavor of whiskey.  Each of these variations results in the inclusion or exclusion of hundreds of chemical components that will ultimately affect the final product.  Liquid and Gas Chromatography is used these days to analyze the "finger print" of whiskey to identify its origin and it is my hope to one day be able to access this data and further refine my models.
 
